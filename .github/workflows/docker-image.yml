@@ -35,7 +35,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           repository: 'wsj0704/hostsvc-cd'
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHAB_TOKEN }}
       - name: 2. Change Docker Tag
         run: |
           sed -i "s/image: wantsomewalnut\/node-app:.*/images: dangtong\/node-app:${{ github.sha }}/g" hostservice-deploy.yaml
