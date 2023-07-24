@@ -26,7 +26,7 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: wsj0704/hostservice:${{ github.sha }}
+        tags: wantsomewalnut/hostservice:${{ github.sha }}
   updateYaml:
     runs-on: ubuntu-latest
     needs: buildImage
